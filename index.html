@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirll-Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="fixed top-0 left-0 right-0 bg-gray-700 py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Company Logo -->
+            <div class="text-white text-lg font-bold">
+                <img src="../Thrill-tourism/asset/logo-dark.png" alt="">
+            </div>
+
+            <!-- Mobile Navigation Icon -->
+            <div class="md:hidden">
+                <button class="text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Right side Buttons -->
+            <div class="hidden md:flex space-x-4 nav-items">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Near Me</button>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Add a Listing</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sub Navbar -->
+    <nav class="fixed top-16 left-0 right-0 bg-white border-b-2 py-2">
+        <div class="container mx-auto flex space-x-10 mt-5 items-center px-4">
+            <!-- Home Icon and Text -->
+            <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 9l9-7 9 7M3 21v-6a9 9 0 0118 0v6"></path>
+                </svg>
+                <span class="text-gray-700">Home</span>
+            </div>
+
+            <!-- Menu Icon and Text -->
+            <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <span class="text-gray-700">All Listings</span>
+            </div>
+
+            <!-- Other Links -->
+            <div class="flex items-center space-x-10 nav-items">
+                <span class="text-gray-700">Blog</span>
+                <span class="text-gray-700">Contact Us</span>
+            </div>
+
+            <!-- Mobile Navigation Icon (Hidden on Desktop) -->
+            <div class="md:hidden">
+                <button class="text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Items (Hidden on Desktop) -->
+    <div class="md:hidden bg-gray-700 text-white px-4 py-2 mobile-nav-items">
+        <button class="block text-left w-full mb-2">Near Me</button>
+        <button class="block text-left w-full">Add a Listing</button>
+    </div>  
+
+    <!-- Main Content -->
+    <div class="container m-2 mx-auto mt-32 flex  flex-col items-center">
+        <img src="../Thrill-tourism/asset/map.PNG" alt="Main Image" style="width:100%">
+        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded mt-4">Near Me</button>
+
+        <div class="lg:grid gap-5  grid-cols-4 m-4 mt-4">
+            <!-- Div 1 -->
+            <div class="bg-white w-350 h-370 border-2 border-blue-500 rounded-lg p-4 flex flex-col items-center">
+                <div class="flex justify-center"> <!-- Center the image horizontally -->
+                    <img src="../Thrill-tourism/asset/luca-bravo-O453M2Liufs-unsplash.jpg" alt="Image 1" class="w-full h-300">
+                </div>
+                <div class="mt-2 flex justify-between lg:space-x-28">
+                    <div>
+                        <h3 class="text-xl text-left font-semibold">Blog Title 1</h3>
+                        <p class="text-gray-600">Name</p>
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span class="text-gray-700 ml-1">Location 1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white w-350 h-370  border-2 border-blue-500 rounded-lg p-4 flex flex-col items-center">
+                <div class="flex justify-center"> <!-- Center the image horizontally -->
+                    <img src="../Thrill-tourism/asset/luca-bravo-O453M2Liufs-unsplash.jpg" alt="Image 1" class="w-full h-300">
+                </div>
+                <div class="mt-2 flex justify-between lg:space-x-28">
+                    <div>
+                        <h3 class="text-xl text-left font-semibold">Blog Title 1</h3>
+                        <p class="text-gray-600">Name</p>
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span class="text-gray-700 ml-1">Location 1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-350 h-370  border-2 border-blue-500 rounded-lg p-4 flex flex-col items-center">
+                <div class="flex justify-center"> <!-- Center the image horizontally -->
+                    <img src="../Thrill-tourism/asset/luca-bravo-O453M2Liufs-unsplash.jpg" alt="Image 1" class="w-full h-300">
+                </div>
+                <div class="mt-2 flex justify-between lg:space-x-28">
+                    <div>
+                        <h3 class="text-xl text-left font-semibold">Blog Title 1</h3>
+                        <p class="text-gray-600">Name</p>
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span class="text-gray-700 ml-1">Location 1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-350 h-370  border-2 border-blue-500 rounded-lg p-4 flex flex-col items-center">
+                <div class="flex justify-center"> <!-- Center the image horizontally -->
+                    <img src="../Thrill-tourism/asset/luca-bravo-O453M2Liufs-unsplash.jpg" alt="Image 1" class="w-full h-300">
+                </div>
+                <div class="mt-2 flex justify-between lg:space-x-28">
+                    <div>
+                        <h3 class="text-xl text-left font-semibold">Blog Title 1</h3>
+                        <p class="text-gray-600">Name</p>
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span class="text-gray-700 ml-1">Location 1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-350 h-370  border-2 border-blue-500 rounded-lg p-4 flex flex-col items-center">
+                <div class="flex justify-center"> <!-- Center the image horizontally -->
+                    <img src="../Thrill-tourism/asset/luca-bravo-O453M2Liufs-unsplash.jpg" alt="Image 1" class="w-full h-300">
+                </div>
+                <div class="mt-2 flex justify-between lg:space-x-28">
+                    <div>
+                        <h3 class="text-xl text-left font-semibold">Blog Title 1</h3>
+                        <p class="text-gray-600">Name</p>
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span class="text-gray-700 ml-1">Location 1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-350 h-370  border-2 border-blue-500 rounded-lg p-4 flex flex-col items-center">
+                <div class="flex justify-center"> <!-- Center the image horizontally -->
+                    <img src="../Thrill-tourism/asset/luca-bravo-O453M2Liufs-unsplash.jpg" alt="Image 1" class="w-full h-300">
+                </div>
+                <div class="mt-2 flex justify-between lg:space-x-28">
+                    <div>
+                        <h3 class="text-xl text-left font-semibold">Blog Title 1</h3>
+                        <p class="text-gray-600">Name</p>
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span class="text-gray-700 ml-1">Location 1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-350 h-370  border-2 border-blue-500 rounded-lg p-4 flex flex-col items-center">
+                <div class="flex justify-center"> <!-- Center the image horizontally -->
+                    <img src="../Thrill-tourism/asset/luca-bravo-O453M2Liufs-unsplash.jpg" alt="Image 1" class="w-full h-300">
+                </div>
+                <div class="mt-2 flex justify-between lg:space-x-28">
+                    <div>
+                        <h3 class="text-xl text-left font-semibold">Blog Title 1</h3>
+                        <p class="text-gray-600">Name</p>
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span class="text-gray-700 ml-1">Location 1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-350 h-370  border-2 border-blue-500 rounded-lg p-4 flex flex-col items-center">
+                <div class="flex justify-center"> <!-- Center the image horizontally -->
+                    <img src="../Thrill-tourism/asset/luca-bravo-O453M2Liufs-unsplash.jpg" alt="Image 1" class="w-full h-300">
+                </div>
+                <div class="mt-2 flex justify-between lg:space-x-28">
+                    <div>
+                        <h3 class="text-xl text-left font-semibold">Blog Title 1</h3>
+                        <p class="text-gray-600">Name</p>
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span class="text-gray-700 ml-1">Location 1</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+            <div class="shadow-container mt-5 bg-white">
+                <div class="p-8 text-center">
+                    <h2 class="text-2xl font-bold mb-4">List your tourism services for free</h2>
+                    <h3 class="text-lg text-gray-600 mb-4">Thrill tourism is an online platform that enables tourists to directly connect with hosts, without any commission fees.</h3>
+                    <button class="bg-blue-500 hover:bg-blue-900 text-white px-4 py-2 rounded">Publish Your Ad for Free</button>
+                </div>
+            </div>
+        
+           
+
+    </div>
+
+    <!-- Footer -->
+    
+    <footer class="flex lg:gap-96 mt-5 bg-white py-4 lg:justify-between mobile-footer">
+        <div class="text-center mobile-gap">
+            <p>
+                2023 © thrilltourism.com | Privacy Policy | Terms and Conditions | Pricing
+            </p>
+        </div>
+        <div class="text-center text-red-500 mobile-gap">
+            <p>
+                Beta version
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

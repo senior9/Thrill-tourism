@@ -1,0 +1,144 @@
+
+.shadow-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1536px;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.w-6 {
+    width: 1.5rem;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+/* Main Navigation Bar */
+.nav-items {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+}
+/* Mobile Navigation Icon (Hidden on Desktop) */
+.md:hidden {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .md:hidden {
+        display: none;
+    }
+}
+/* Sub Navbar */
+@media (max-width: 768px) {
+    .space-x-10 {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+}
+/* Mobile Navigation Items (Hidden on Desktop) */
+.mobile-nav-items {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-items {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Main Content and Blog Cards */
+.lg:grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 1024px) {
+    .lg:grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .w-350 {
+        width: 100%;
+    }
+}
+
+
+/* Make the right-side buttons in the top navbar responsive */
+.nav-items {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .py-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .nav-items {
+        display: none;
+    }
+    .md:hidden {
+        display: block;
+    }
+    .md:hidden {
+        display: none;
+    }
+    .top-16 {
+        top: 4rem;
+    }
+
+    .py-2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .space-x-10 {
+        justify-content: space-between;
+    }
+
+    .nav-items {
+        display: none;
+    }
+    .mobile-nav-items {
+        display: none;
+    }
+    .shadow-container {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .mobile-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .mobile-gap {
+        gap: 1rem;
+    }
+}
+
+
+
+
